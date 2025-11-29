@@ -1,4 +1,11 @@
 /* GDG / Google Color Variables */
+/*
+  On this part, we define color variables based on Google's branding colors.
+
+  These color variables can then be reused throughout the entire CSS file without having to type the color code everytime we want to use them. 
+
+  Another benefit of using variables is that if we want to change a color, we only need to change it in one place (here) and it will be reflected everywhere the variable is used.
+*/
 :root {
   --google-blue: #4285f4;
   --google-red: #ea4335;
@@ -16,25 +23,33 @@
 }
 
 /* Reset and Base Styles */
+/*
+  Here we reset some default browser styles and set base styles for the body and headings.
+
+  Basically, we want every single element on our page to start with no margin or padding, and we want to use the border-box model for box sizing.
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*
+  On this part, we set the base styles for the body and headings.
+
+  We set the font family to "Roboto", which is a popular Google font, and we set the line height for better readability.
+
+  We also set the text color and background color using the variables we defined earlier.
+
+  Finally, we set the overflow-x property to "hidden", which is used to hide the horizontal scroll bar. 
+*/
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   color: var(--text-main);
   background-color: var(--bg-body);
-  overflow-x: hidden;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Roboto", sans-serif;
-}
 
 /* 
   TODO: Live Coding Session Styles
